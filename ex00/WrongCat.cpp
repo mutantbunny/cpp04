@@ -6,13 +6,13 @@
 /*   By: gmachado <gmachado@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/24 02:37:44 by gmachado          #+#    #+#             */
-/*   Updated: 2023/11/24 03:28:54 by gmachado         ###   ########.fr       */
+/*   Updated: 2023/11/24 17:41:04 by gmachado         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "WrongCat.hpp"
 
-WrongCat::WrongCat(void) : WrongAnimal()
+WrongCat::WrongCat(void) : type("Cat")
 {
 	std::cout << "WrongCat class default constructor called" << std::endl;
 }

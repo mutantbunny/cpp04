@@ -6,13 +6,13 @@
 /*   By: gmachado <gmachado@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/24 02:37:39 by gmachado          #+#    #+#             */
-/*   Updated: 2023/11/24 03:18:28 by gmachado         ###   ########.fr       */
+/*   Updated: 2023/11/24 17:32:17 by gmachado         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "WrongAnimal.hpp"
 
-WrongAnimal::WrongAnimal(void) : type("Generic")
+WrongAnimal::WrongAnimal(void) : type("Generic animal")
 {
 	std::cout << "Animal class default constructor called" << std::endl;
 }
