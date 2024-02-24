@@ -6,7 +6,7 @@
 /*   By: gmachado <gmachado@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/24 02:37:28 by gmachado          #+#    #+#             */
-/*   Updated: 2023/11/24 17:41:33 by gmachado         ###   ########.fr       */
+/*   Updated: 2024/02/23 02:16:04 by gmachado         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -68,13 +68,16 @@ int main()
 		WrongCat wrongCat;
 		WrongAnimal &wrongAnimal = wrongCat;
 
-		std::cout << "\nwrongCat is a "<< wrongCat.getType() << "..." << std::endl;
+		std::cout << "\nwrongCat is a "<< wrongCat.getType() << "..."
+			<< std::endl;
 		wrongCat.makeSound();
 
-		std::cout << "\nwrongAnimal is a "<< wrongAnimal.getType() << "..." << std::endl;
+		std::cout << "\nwrongAnimal is a "<< wrongAnimal.getType() << "..."
+			<< std::endl;
 		wrongAnimal.makeSound();
 
-		std::cout << "\nEnd of scope, destructors should be called here:\n" << std::endl;
+		std::cout << "\nEnd of scope, destructors should be called here:\n"
+			<< std::endl;
 	}
 
 	return 0;

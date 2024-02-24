@@ -2,13 +2,13 @@ CC = c++
 CFLAGS = -Wall -Wextra -Werror -ggdb -std=c++98
 RM = rm -f
 
-NAME = animals
+NAME = abstract
 
-SRCS = Animal.cpp Cat.cpp Dog.cpp WrongAnimal.cpp WrongCat.cpp main.cpp
+SRCS = Animal.cpp Cat.cpp Dog.cpp Brain.cpp main.cpp
 
 OBJS = $(SRCS:.cpp=.o)
 
-INCS = Animal.hpp Cat.hpp Dog.hpp WrongAnimal.hpp WrongCat.hpp
+INCS = Animal.hpp Cat.hpp Dog.hpp Brain.hpp
 
 all: $(NAME)
 

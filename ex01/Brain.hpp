@@ -1,32 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Dog.hpp                                            :+:      :+:    :+:   */
+/*   Brain.hpp                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: gmachado <gmachado@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/11/24 02:37:26 by gmachado          #+#    #+#             */
-/*   Updated: 2023/11/25 04:17:44 by gmachado         ###   ########.fr       */
+/*   Created: 2023/11/24 20:45:31 by gmachado          #+#    #+#             */
+/*   Updated: 2023/11/25 04:03:48 by gmachado         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef DOG_HPP
-# define DOG_HPP
+#ifndef BRAIN_HPP
+# define BRAIN_HPP
 
-#include "Animal.hpp"
+#include <iostream>
 
-class Dog: public Animal
+class Brain
 {
+	private:
+		std::string ideas[100];
+
 	public:
-		Dog(void);
-		Dog(Dog &src);
+		Brain(void);
+		Brain(Brain &src);
 
-		virtual ~Dog(void);
+		~Brain(void);
 
-		Dog &operator=(Dog &src);
+		Brain &operator=(Brain &src);
 
-		virtual std::string getType(void) const;
-		virtual void makeSound(void) const;
+		std::string getIdea(size_t idx);
+		void setIdea(size_t idx, std::string idea);
 };
 
 #endif

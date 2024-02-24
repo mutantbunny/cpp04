@@ -1,32 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Dog.hpp                                            :+:      :+:    :+:   */
+/*   AMateria.cpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: gmachado <gmachado@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/11/24 02:37:26 by gmachado          #+#    #+#             */
-/*   Updated: 2023/11/25 04:17:44 by gmachado         ###   ########.fr       */
+/*   Created: 2024/02/23 18:49:59 by gmachado          #+#    #+#             */
+/*   Updated: 2024/02/24 02:54:33 by gmachado         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef DOG_HPP
-# define DOG_HPP
+#include "AMateria.hpp"
 
-#include "Animal.hpp"
+AMateria::AMateria(void) { }
 
-class Dog: public Animal
+AMateria::AMateria(AMateria &src) { (void)src; }
+
+AMateria::AMateria(std::string const & type) : type(type) { }
+
+AMateria::~AMateria(void) { }
+
+AMateria &AMateria::operator=(AMateria &src)
 {
-	public:
-		Dog(void);
-		Dog(Dog &src);
+	(void)src;
+	return *this;
+}
 
-		virtual ~Dog(void);
+std::string const &AMateria::getType() const { return type; }
 
-		Dog &operator=(Dog &src);
-
-		virtual std::string getType(void) const;
-		virtual void makeSound(void) const;
-};
-
-#endif
+void AMateria::use(ICharacter& target) { (void)target; }

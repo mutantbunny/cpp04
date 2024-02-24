@@ -6,7 +6,7 @@
 /*   By: gmachado <gmachado@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/24 02:37:44 by gmachado          #+#    #+#             */
-/*   Updated: 2023/11/24 17:41:04 by gmachado         ###   ########.fr       */
+/*   Updated: 2024/02/23 02:56:39 by gmachado         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,6 +29,11 @@ WrongCat::~WrongCat(void)
 
 WrongCat &WrongCat::operator=(WrongCat &src)
 {
+	std::cout << "WrongCat class assignment operator called" << std::endl;
+
+	if (this == &src)
+		return *this;
+
 	type = src.type;
 	return *this;
 }

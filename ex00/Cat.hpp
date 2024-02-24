@@ -6,7 +6,7 @@
 /*   By: gmachado <gmachado@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/24 02:37:22 by gmachado          #+#    #+#             */
-/*   Updated: 2023/11/24 03:34:58 by gmachado         ###   ########.fr       */
+/*   Updated: 2023/11/25 04:17:33 by gmachado         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,9 +17,6 @@
 
 class Cat: public Animal
 {
-	protected:
-		std::string type;
-
 	public:
 		Cat(void);
 		Cat(Cat &src);

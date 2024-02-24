@@ -1,32 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Dog.hpp                                            :+:      :+:    :+:   */
+/*   ICharacter.hpp                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: gmachado <gmachado@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/11/24 02:37:26 by gmachado          #+#    #+#             */
-/*   Updated: 2023/11/25 04:17:44 by gmachado         ###   ########.fr       */
+/*   Created: 2024/02/23 04:10:52 by gmachado          #+#    #+#             */
+/*   Updated: 2024/02/23 19:04:49 by gmachado         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef DOG_HPP
-# define DOG_HPP
+#ifndef I_CHARACTER_HPP
+# define I_CHARACTER_HPP
 
-#include "Animal.hpp"
+# include <string>
 
-class Dog: public Animal
+class AMateria;
+
+class ICharacter
 {
 	public:
-		Dog(void);
-		Dog(Dog &src);
-
-		virtual ~Dog(void);
-
-		Dog &operator=(Dog &src);
-
-		virtual std::string getType(void) const;
-		virtual void makeSound(void) const;
+		virtual ~ICharacter() {}
+		virtual std::string const & getName() const = 0;
+		virtual void equip(AMateria* m) = 0;
+		virtual void unequip(int idx) = 0;
+		virtual void use(int idx, ICharacter& target) = 0;
 };
 
 #endif

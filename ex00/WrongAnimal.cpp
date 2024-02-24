@@ -6,7 +6,7 @@
 /*   By: gmachado <gmachado@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/24 02:37:39 by gmachado          #+#    #+#             */
-/*   Updated: 2023/11/24 17:32:17 by gmachado         ###   ########.fr       */
+/*   Updated: 2024/02/23 02:56:18 by gmachado         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,6 +29,11 @@ WrongAnimal::~WrongAnimal(void)
 
 WrongAnimal &WrongAnimal::operator=(WrongAnimal &src)
 {
+	std::cout << "WrongAnimal class assignment operator called" << std::endl;
+
+	if (this == &src)
+		return *this;
+
 	type = src.type;
 	return *this;
 }

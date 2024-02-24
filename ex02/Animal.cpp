@@ -6,7 +6,7 @@
 /*   By: gmachado <gmachado@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/24 02:37:07 by gmachado          #+#    #+#             */
-/*   Updated: 2024/02/23 02:54:40 by gmachado         ###   ########.fr       */
+/*   Updated: 2024/02/23 02:53:52 by gmachado         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,9 +38,3 @@ Animal &Animal::operator=(Animal &src)
 	return *this;
 }
 
-std::string Animal::getType(void) const { return type; }
-
-void Animal::makeSound(void) const
-{
-	std::cout << "*** Generic animal sounds ***" << std::endl;
-}
