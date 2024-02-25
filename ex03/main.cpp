@@ -6,7 +6,7 @@
 /*   By: gmachado <gmachado@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/24 02:36:42 by gmachado          #+#    #+#             */
-/*   Updated: 2024/02/24 19:08:10 by gmachado         ###   ########.fr       */
+/*   Updated: 2024/02/25 00:15:14 by gmachado         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -168,7 +168,7 @@ int main()
 				std::cout << "--> #" << i << ": None" << std::endl;
 		}
 
-		std::cout << "-> src2 learns cure." << std::endl;
+		std::cout << "\n-> src2 learns cure." << std::endl;
 
 		MateriaSource src2;
 		src2.learnMateria(new Cure());
@@ -183,7 +183,7 @@ int main()
 				std::cout << "--> #" << i << ": None" << std::endl;
 		}
 
-		std::cout << "-> Create src3 from src1 using copy constructor."
+		std::cout << "\n-> Create src3 from src1 using copy constructor."
 			<< std::endl;
 
 		MateriaSource src3(src1);
@@ -198,7 +198,7 @@ int main()
 				std::cout << "--> #" << i << ": None" << std::endl;
 		}
 
-		std::cout << "-> Copy src2 from src1 using assignment operator."
+		std::cout << "\n-> Copy src2 from src1 using assignment operator."
 			<< std::endl;
 		src2 = src1;
 		std::cout << "-> src1 learns cure." << std::endl;
@@ -253,7 +253,7 @@ int main()
 				std::cout << "--> #" << i << ": None" << std::endl;
 		}
 
-		std::cout << "-> c2 equips cure." << std::endl;
+		std::cout << "\n-> c2 equips cure." << std::endl;
 
 		Character c2;
 		c2.equip(new Cure());
@@ -268,7 +268,7 @@ int main()
 				std::cout << "--> #" << i << ": None" << std::endl;
 		}
 
-		std::cout << "-> Create c3 from src1 using copy constructor."
+		std::cout << "\n-> Create c3 from src1 using copy constructor."
 			<< std::endl;
 
 		Character c3(c1);
@@ -283,7 +283,7 @@ int main()
 				std::cout << "--> #" << i << ": None" << std::endl;
 		}
 
-		std::cout << "-> Copy c2 from c1 using assignment operator."
+		std::cout << "\n-> Copy c2 from c1 using assignment operator."
 			<< std::endl;
 		c2 = c1;
 		std::cout << "-> src1 equips cure." << std::endl;
