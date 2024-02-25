@@ -6,7 +6,7 @@
 /*   By: gmachado <gmachado@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/24 02:37:28 by gmachado          #+#    #+#             */
-/*   Updated: 2024/02/23 02:59:51 by gmachado         ###   ########.fr       */
+/*   Updated: 2024/02/25 00:45:57 by gmachado         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,7 +38,7 @@ int main()
 		std::cout << "\n*****************************************************\n"
 			<< std::endl;
 
-		std::cout << "\nAdditional tests for Cat classes:\n" << std::endl;
+		std::cout << "Additional tests for Cat classes:\n" << std::endl;
 
 		Cat firstCat;
 
@@ -104,7 +104,7 @@ int main()
 	{
 		std::cout << "\n*****************************************************\n"
 			<< std::endl;
-		std::cout << "\nAdditional tests for Dog classes:\n" << std::endl;
+		std::cout << "Additional tests for Dog classes:\n" << std::endl;
 
 		Dog firstDog;
 		Animal &hiddenDog = firstDog;
